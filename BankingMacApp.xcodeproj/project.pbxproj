@@ -13,6 +13,16 @@
 		C4AE134427303D4C00EC3DDC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AE133227303D4A00EC3DDC /* ContentView.swift */; };
 		C4AE134527303D4C00EC3DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4AE133327303D4B00EC3DDC /* Assets.xcassets */; };
 		C4AE134627303D4C00EC3DDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = C4AE133327303D4B00EC3DDC /* Assets.xcassets */; };
+		C4AE135227303F2900EC3DDC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AE135127303F2900EC3DDC /* Home.swift */; };
+		C4AE135327303F4600EC3DDC /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AE135127303F2900EC3DDC /* Home.swift */; };
+		C4AE13552730478700EC3DDC /* Recent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AE13542730478700EC3DDC /* Recent.swift */; };
+		C4AE13562730478700EC3DDC /* Recent.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AE13542730478700EC3DDC /* Recent.swift */; };
+		C4AE135827304F8500EC3DDC /* BarGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AE135727304F8500EC3DDC /* BarGraph.swift */; };
+		C4AE135927304F8500EC3DDC /* BarGraph.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AE135727304F8500EC3DDC /* BarGraph.swift */; };
+		C4AE135B27304FA200EC3DDC /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AE135A27304FA200EC3DDC /* Analytics.swift */; };
+		C4AE135C27304FA200EC3DDC /* Analytics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AE135A27304FA200EC3DDC /* Analytics.swift */; };
+		C4AE135E2730522A00EC3DDC /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AE135D2730522A00EC3DDC /* History.swift */; };
+		C4AE135F2730522A00EC3DDC /* History.swift in Sources */ = {isa = PBXBuildFile; fileRef = C4AE135D2730522A00EC3DDC /* History.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +32,11 @@
 		C4AE133827303D4B00EC3DDC /* BankingMacApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankingMacApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4AE133E27303D4C00EC3DDC /* BankingMacApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BankingMacApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C4AE134027303D4C00EC3DDC /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
+		C4AE135127303F2900EC3DDC /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		C4AE13542730478700EC3DDC /* Recent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recent.swift; sourceTree = "<group>"; };
+		C4AE135727304F8500EC3DDC /* BarGraph.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BarGraph.swift; sourceTree = "<group>"; };
+		C4AE135A27304FA200EC3DDC /* Analytics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analytics.swift; sourceTree = "<group>"; };
+		C4AE135D2730522A00EC3DDC /* History.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = History.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +69,8 @@
 		C4AE133027303D4A00EC3DDC /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				C4AE135027303F1C00EC3DDC /* Model */,
+				C4AE134F27303F1000EC3DDC /* View */,
 				C4AE133127303D4A00EC3DDC /* BankingMacAppApp.swift */,
 				C4AE133227303D4A00EC3DDC /* ContentView.swift */,
 				C4AE133327303D4B00EC3DDC /* Assets.xcassets */,
@@ -76,6 +93,25 @@
 				C4AE134027303D4C00EC3DDC /* macOS.entitlements */,
 			);
 			path = macOS;
+			sourceTree = "<group>";
+		};
+		C4AE134F27303F1000EC3DDC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				C4AE135727304F8500EC3DDC /* BarGraph.swift */,
+				C4AE135127303F2900EC3DDC /* Home.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C4AE135027303F1C00EC3DDC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C4AE13542730478700EC3DDC /* Recent.swift */,
+				C4AE135A27304FA200EC3DDC /* Analytics.swift */,
+				C4AE135D2730522A00EC3DDC /* History.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -176,7 +212,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4AE135827304F8500EC3DDC /* BarGraph.swift in Sources */,
+				C4AE13552730478700EC3DDC /* Recent.swift in Sources */,
+				C4AE135E2730522A00EC3DDC /* History.swift in Sources */,
+				C4AE135B27304FA200EC3DDC /* Analytics.swift in Sources */,
 				C4AE134327303D4C00EC3DDC /* ContentView.swift in Sources */,
+				C4AE135227303F2900EC3DDC /* Home.swift in Sources */,
 				C4AE134127303D4C00EC3DDC /* BankingMacAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,7 +226,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C4AE135927304F8500EC3DDC /* BarGraph.swift in Sources */,
+				C4AE13562730478700EC3DDC /* Recent.swift in Sources */,
+				C4AE135F2730522A00EC3DDC /* History.swift in Sources */,
+				C4AE135C27304FA200EC3DDC /* Analytics.swift in Sources */,
 				C4AE134427303D4C00EC3DDC /* ContentView.swift in Sources */,
+				C4AE135327303F4600EC3DDC /* Home.swift in Sources */,
 				C4AE134227303D4C00EC3DDC /* BankingMacAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
